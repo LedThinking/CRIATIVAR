@@ -1,9 +1,9 @@
 {
-  "name": "CRI@TIV@R",
-  "displayName": "CRI@TIV@R",
+  "name": "CRIATIVAR",
+  "displayName": "CRI@TIVAR",
   "expo": {
-    "name": "CRI@TIV@R",
-    "slug": "CRI@TIV@R",
+    "name": "CRIATIVAR",
+    "slug": "CRIATIVAR",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
