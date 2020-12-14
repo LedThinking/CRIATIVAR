@@ -1,11 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Main from './screens/Main';
-import ViewOfContentKit from './screens/ViewOfContentKit';
+import Manuais from './screens/Manuais';
+import Welcome from './screens/ViewOfContentKit';
 
 import { colors } from './styles';
 
@@ -15,9 +14,8 @@ const routes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initalRouteName="Main"
+        initalRouteName="Welcome"
         screenOptions={{
-          headerTitleAlign: 'CRI@TIV@R',
           headerTintColor: colors.colorTextPrimary,
           headerStyle: {
             backgroundColor: colors.colorSecondary,
@@ -25,20 +23,14 @@ const routes = () => {
         }}
       />
       <Stack.Screen
-        options={{ headerShown: false }}
-        name="Main"
-        component={Main}
+        options={{title: 'Manuais'}}
+        name="Manuais"
+        component={Manuais}
       />
       <Stack.Screen
-        options={{
-          title: 'CRI@TIV@R',
-          headerStyle: {
-            elevation: 0,
-            backgroundColor: colors.colorSecondary,
-          },
-        }}
-        name="ViewOfContentKit"
-        component={ViewOfContentKit}
+        options={{ headerShown: false }}
+        name="Welcome"
+        component={Welcome}
       />
     </NavigationContainer>
   )
