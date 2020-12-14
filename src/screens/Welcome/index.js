@@ -5,7 +5,7 @@ import { RectButton } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
-import landingImg from '../../assets/images/landing.png'
+import landingImg from '../../assets/images/logo.png'
 
 function Landing() {
   const { navigate } = useNavigation();
